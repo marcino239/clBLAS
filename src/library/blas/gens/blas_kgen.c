@@ -1173,8 +1173,9 @@ updateResultGen(
         if ( vecLen > 1 ) {
 
             sprintf(tmp,
-                "uC.%s = %s + (%s * %s + %s)/%d;\n",
+                "uC.%s%dv = %s + (%s * %s + %s)/%d;\n",
                 vfield,
+                vecLen,
                 uvars.result,
                 uvars.startCol,
                 uvars.ld,
@@ -1197,8 +1198,9 @@ updateResultGen(
         if ( vecLen > 1 ) {
 
             sprintf(tmp,
-                "uC.%s = %s + (%s * %s + %s)/%d;\n",
+                "uC.%s%dv = %s + (%s * %s + %s)/%d;\n",
                 vfield,
+                vecLen,
                 uvars.result,
                 uvars.startRow,
                 uvars.ld,
